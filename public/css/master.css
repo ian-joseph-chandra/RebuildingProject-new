@@ -1,0 +1,166 @@
+@font-face {
+    src: url('../fonts/PoppinsLight.otf');
+    font-family: Poppins;
+}
+
+@font-face {
+    src: url('../fonts/MADETOMMYBold.otf');
+    font-family: madetommy;
+}
+
+/*Header*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    opacity: 0;
+    left: -2px;
+    top: -3px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #545454;
+    border-radius: 3px;
+}
+
+.menu-toggle span:nth-child(3) {
+    width: 13px;
+}
+
+.navbar {
+    z-index: 99;
+    background-color: #F7F7F7;
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 0px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a:hover,
+.active {
+    color: #000000;
+}
+
+.navbar ul li a,
+#this {
+    text-align: center;
+    position: relative;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 4px 0;
+    transition: 0.5s;
+}
+
+.contact {
+    text-align: center;
+    align-items: center;
+    color: #545454;
+    font-family: Poppins;
+}
+
+#this::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    top: 100%;
+    left: 0;
+    background: #FFA216;
+    transition: transform 0.5s;
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+/*Footer*/
+.contact-button {
+    margin-right: 5px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+#copyright {
+    color: #545454;
+    font-family: Poppins
+}
+
+.contact-icon{
+    width: 17px;
+}
+
+.pages {
+    font-family: Poppins;
+    text-decoration: none !important;
+    color: #545454;
+}
+
+
+#footer-background {
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    height: 800px;
+}
+
+
+@media (max-width: 576px) {
+    .navbar ul {
+        position: fixed;
+        flex-direction: column;
+        top: 57px;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        background-color: #F7F7F7;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.5s;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .navbar {
+        font-family: madetommy;
+    }
+
+    nav ul.slide {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    #headerLogo {
+        width: 100px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        padding: 7px 30px;
+    }
+
+    .navbar-nav {
+        margin-left: 90px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}

@@ -1,0 +1,134 @@
+.our-program {
+    font-size: 23px;
+    line-height: 40px;
+    margin-inline: 150px;
+    margin-bottom: 50px;
+}
+
+.whatwedocard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-us {
+    color: #545454;
+    font-family: PoppinsEB;
+}
+
+#our-vision {
+    color: #FFA216;
+    font-family: PoppinsEB;
+}
+
+.grid-0,
+.grid-4 {
+    font-family: madetommy;
+    font-size: 50px;
+}
+
+.grid-1,
+.grid-0 {
+    color: #545454;
+}
+
+.grid-2,
+.grid-4 {
+    color: #FFA216;
+}
+
+.grid-1,
+.grid-2 {
+    font-family: PoppinsB;
+}
+
+
+
+.whatWeDoPic {
+    max-width: 80%;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .our-program {
+        font-size: 13px;
+        line-height: 20px;
+        margin-inline: 10px;
+        margin-bottom: 0px;
+    }
+
+    #quote {
+        font-size: 10px;
+        line-height: 15px;
+        display: contents;
+    }
+
+    .programs {
+        display: block;
+        text-align:start;
+    }
+
+    .program {
+        width: 200px;
+        height: 237px;
+        margin: 20px;
+        background-color: white;
+        border-color: transparent !important;
+        border-radius: 30px 30px 30px 30px;
+        transition: 0.3s;
+        /*width: 246px;*/
+        /*height: 299px;*/
+    }
+
+    .card-title {
+        font-size: 17px;
+        line-height: 4px;
+    }
+
+    #quote-1 {
+        font-size: 9.5px;
+        line-height: 15px;
+    }
+
+    .btnGetInvolved {
+        display: none;
+    }
+
+    .whoweare {
+        text-align: center;
+    }
+
+    #quote-2 {
+        font-size: 12px;
+        line-height: 22px;
+        text-align: start;
+        display: block;
+    }
+
+    #about-us,
+    #our-vision {
+        font-size: 12px;
+    }
+
+    .pKarakter {
+        display: block;
+        margin-top: 14px;
+    }
+
+    .cardWWD {
+        width: 210px;
+        height: 260px;
+        margin: 10px;
+        margin-bottom: 80px;
+    }
+
+    .number {
+        font-size: 45px;
+        margin-top: -45px;
+    }
+
+    #quoteWWD {
+        font-size: 11px;
+        line-height: 17px;
+    }
+}
