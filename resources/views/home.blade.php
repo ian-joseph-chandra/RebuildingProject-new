@@ -33,7 +33,7 @@
                         <p class="our-program grid-1">
                             "Karena pembelajaran <span class="grid-2">tidak hanya di ruang kelas</span>, kami
                             memfasilitasi
-                            program edukasi yang <span class="grid-2">menarik </span> dan <span class=" grid-2">menyenangkan</span>
+                            program edukasi yang <span class="grid-2">menarik </span> dan <span class="grid-2">menyenangkan</span>
                             untuk anak-anak”
                         </p>
 
@@ -57,11 +57,9 @@
                         @endforeach
                     </div>
 
-                    <div class="btnGetInvolved col p-3 text-center">
-                        <button class=" btn px-5 py-2 mb-4" type="submit" id="login"
-                                onclick="window.location='{{url('get-involved')}}'"><b>Get Involved</b>
-                        </button>
-                    </div>
+                    <button class=" btn px-5 py-2 mb-4" type="submit" id="login"
+                            onclick="window.location='{{url('get-involved')}}'"><b>Get Involved</b>
+                    </button>
                 </div>
             </div>
         </div>
