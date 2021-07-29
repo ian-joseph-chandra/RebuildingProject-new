@@ -32,45 +32,51 @@
 <body>
 
 <section id="navbar">
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbarUtama">
-        <div class="menu-toggle">
-            <input type="checkbox"/>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <button type=button class="menu-toggle navbar-toggle collapsed" data-toggle="collapse"
+                data-target="navbar-collapsable">
+            {{--            <input type="checkbox"/>--}}
+            <span class="sr-only"></span>
+            <span class="menu-drp-down"></span>
+            <span class="menu-drp-down"></span>
+            <span class="menu-drp-down"></span>
+            <span class="menu-drp-down"></span>
+            <span class="menu-drp-down"></span>
+        </button>
 
-        <div class="navbar-nav">
+        <div class="navbar-brand navbar-nav">
             <a href="{{url('/')}}">
-                <img src="{{asset('images/header-footer/logo.png')}}" width="150px" id="headerLogo"></a>
+                <img class="img-fluid" width="150px" src="{{asset('images/header-footer/logo.png')}}" alt="logo"></a>
         </div>
 
-        <ul>
-            <li class="nav-item">
-                <a id="home" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/')}}">Home
-                    <span class="sr-only">(current)</span></a>
-            </li>
+        <div class="collapse navbar-collapse" id="navbar-collapsable">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a id="home" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/')}}">Home
+                        <span class="sr-only">(current)</span></a>
+                </li>
 
-            <li class="nav-item">
-                <a id="about" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/about-us')}}">About Us
-                    <span class="sr-only">(current)</span></a>
-            </li>
+                <li class="nav-item">
+                    <a id="about" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/about-us')}}">About Us
+                        <span class="sr-only">(current)</span></a>
+                </li>
 
-            <li class="nav-item">
-                <a id="stories" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/stories')}}">Our Story
-                    <span class="sr-only">(current)</span></a>
-            </li>
+                <li class="nav-item">
+                    <a id="stories" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/stories')}}">Our Story
+                        <span class="sr-only">(current)</span></a>
+                </li>
 
-            <li class="nav-item">
-                <a id="contact-us" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/contact-us')}}">Contact Us
-                    <span class="sr-only">(current)</span></a>
-            </li>
+                <li class="nav-item">
+                    <a id="contact-us" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/contact-us')}}">Contact Us
+                        <span class="sr-only">(current)</span></a>
+                </li>
 
-            <li class="nav-item">
-                <a id="get-involved" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/get-involved')}}">Get
-                    Involved<span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
+                <li class="nav-item">
+                    <a id="get-involved" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/get-involved')}}">Get
+                        Involved<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </section>
 

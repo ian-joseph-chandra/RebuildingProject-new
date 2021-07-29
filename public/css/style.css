@@ -123,24 +123,6 @@ transform-origin: left;
     color: #FFA216;
 }
 
-#login,
-#expand {
-    background-color: #FFA216;
-    border-radius: 20px;
-    border: 2px solid #FFA216 !important;
-    cursor: pointer;
-    color: white;
-    transition: 0.5s;
-    font-family: madetommy;
-    text-decoration: none;
-}
-
-#login:hover,
-#expand:hover {
-    background-color: transparent;
-    color: #FFA216;
-}
-
 #post-article-button,
 #post-merch-button,
 #post-member-button {
@@ -264,22 +246,10 @@ h4 {
     padding: 0 12.5% 0 12.5%;
 }
 
-#quote,
-#quoteWWD {
-    line-height: 27px;
-    font-size: 16px;
-    font-family: Poppins;
-}
-
 #quote-1 {
     font-family: Poppins;
     font-size: 12px;
     line-height: 18px;
-}
-
-#quote-2 {
-    font-family: Poppins;
-    line-height: 36px;
 }
 
 .carrot-0 {
@@ -518,37 +488,12 @@ h4 {
     justify-content: center;
 }
 
-.cardWWD {
-    background-color: #FBEFE4;
-    border-color: transparent !important;
-    border-radius: 30px 30px 30px 30px;
-    transition: 0.3s;
-    width: 260px;
-    height: 420px;
-}
-
-.number {
-    color: #FFA216;
-    font-family: PoppinsB;
-    position: relative;
-    font-size: 65px;
-    margin-top: -60px;
-}
-
 .profile-card {
     background-color: white;
     border-radius: 20px;
     border-color: transparent;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 430px;
-}
-
-.contact-button {
-    border-radius: 100%;
-    background-color: #FFA216;
-    color: white;
-    padding: 12px;
-    font-size: 22px;
 }
 
 .icon {

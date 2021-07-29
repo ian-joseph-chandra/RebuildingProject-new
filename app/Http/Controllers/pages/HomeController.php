@@ -32,9 +32,38 @@ class HomeController extends Controller
             ],
         ];
 
-//        $example = $programs[0]['title'];
         $activities = [
-
+            [
+                'id' => '01',
+                'image' => 'images/home/ilus1.png',
+                'description' => 'Merancang program edukasi
+berkonsep Fun-Learning
+sesuai dengan kategori umur
+setiap anak'
+            ],
+            [
+                'id' => '02',
+                'image' => 'images/home/ilus2.png',
+                'description' => 'Memperluas pengetahuan
+anak-anak yatim piatu di luar
+institusi pendidikan formal'
+            ],
+            [
+                'id' => '03',
+                'image' => 'images/home/ilus3.png',
+                'description' => 'Mendorong pengembangan
+kemampuan serta membangun
+pendidikan karakter'
+            ],
+            [
+                'id' => '04',
+                'image' => 'images/home/ilus4.png',
+                'description' => 'Mendorong partisipasi
+anak-anak muda untuk
+berkontribusi dalam
+meningkatkan kualitas edukasi
+di panti asuhan di Indonesia'
+            ]
         ];
 
 //        return compact('example', 'programs', 'activities');
