@@ -13,62 +13,45 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     {{--Bootstrap dependencies--}}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/master.css')}}">
 </head>
 
 <body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbarUtama">
+            <!-- <div class="collapse navbar-collapse" id="navbarNav" style="z-index: 99; width: fit-content;"> -->
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-nav">
+                <a href="{{url('/')}}"> <img src="{{asset('images/header-footer/logo.png')}}" width="150px" id="headerLogo"></a>
 
-<section id="navbar">
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <button type=button class="menu-toggle navbar-toggle collapsed" data-toggle="collapse"
-                data-target="navbar-collapsable">
-            {{--            <input type="checkbox"/>--}}
-            <span class="sr-only"></span>
-            <span class="menu-drp-down"></span>
-            <span class="menu-drp-down"></span>
-            <span class="menu-drp-down"></span>
-            <span class="menu-drp-down"></span>
-            <span class="menu-drp-down"></span>
-        </button>
-
-        <div class="navbar-brand navbar-nav">
-            <a href="{{url('/')}}">
-                <img class="img-fluid" width="150px" src="{{asset('images/header-footer/logo.png')}}" alt="logo"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapsable">
-            <ul class="navbar-nav">
+            </div>
+            <ul class="menu">
                 <li class="nav-item">
-                    <a id="home" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/')}}">Home
-                        <span class="sr-only">(current)</span></a>
+                    <a id="home" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/')}}">Home<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a id="about" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/about-us')}}">About Us
-                        <span class="sr-only">(current)</span></a>
+                    <a id="about" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/about-us')}}">About Us<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a id="stories" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/stories')}}">Our Story
-                        <span class="sr-only">(current)</span></a>
+                    <a id="stories" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/stories')}}">Our Story<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a id="contact-us" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/contact-us')}}">Contact Us
-                        <span class="sr-only">(current)</span></a>
+                    <a id="contact-us" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/contact-us')}}">Contact
+                        Us<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
@@ -76,56 +59,54 @@
                         Involved<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-        </div>
-    </nav>
-</section>
 
-@yield('content')
 
-<footer class="footer mt-5 justify-content-center" style="bottom: 0;">
-    <div class="justify-content-center" id="footer-background"
-         style="background-image: url({{asset('images/header-footer/flow.png')}}">
-        <div class="row justify-content-center" style="align-self: flex-end;">
-            <div class="col-xl-4 col-lg-4 col-sm-12 col-10 justify-content-center text-center my-3">
-                <img src="{{asset('images/header-footer/Logo_black.png')}}" width="250px" alt="footer-logo">
-                <br>
-                <a href="https://wa.me/6285388114785" target="_blank" class="contact-button"
-                   style="background-image: url('{{asset('images/header-footer/Whatsapp.png')}}')"></a>
-                <a href="https://www.facebook.com/reproes/" target="_blank" class="contact-button"
-                   style="background-image: url('{{asset('images/header-footer/Facebook.png')}}')"></a>
-                <a href="https://www.instagram.com/rebuildingproject/" target="_blank" class="contact-button"
-                   style="background-image: url('{{asset('images/header-footer/Instagram.png')}}')"></a>
-            </div>
+            <!-- </div> -->
+        </nav>
+    </section>
 
-            <div class="col-xl-2 col-lg-2 col-sm-5 col-8 justify-content-center my-3">
-                <a href="{{url('about-us')}}" class="pages">About Us</a>
-                <br><br>
-                <a href="{{url('stories')}}" class="pages">Our Story</a>
-                <br><br>
-                <a href="{{url('contact-us')}}" class="pages">Contact Us</a>
-                <br><br>
-                <a href="{{url('get-involved')}}" class="pages">Get Involved</a> <br>
-            </div>
+    @yield('content')
 
-            <div class="col-xl-4 col-lg-4 col-sm-7 col-11 justify-content-center my-3">
-                <a class="contact"><i class="contact-icon fab fa-instagram footer-left"></i> @rebuildingproject</a>
-                <br><br>
-                <a class="contact"><i class="contact-icon fab fa-facebook-f footer-left"></i> @reproes</a>
-                <br><br>
-                <a class="contact">
-                    <i class="contact-icon far fa-envelope footer-left"></i> rebuildinglivesforchildren@gmail.com </a>
-            </div>
+    <footer class="footer mt-5 justify-content-center" style="bottom: 0;">
+        <div class="justify-content-center" id="footer-background" style="background-image: url({{asset('images/header-footer/flow.png')}}">
+            <div class="row justify-content-center" style="align-self: flex-end;">
+                <div class="col-xl-4 col-lg-4 col-sm-12 col-10 justify-content-center text-center my-3">
+                    <img src="{{asset('images/header-footer/Logo_black.png')}}" width="250px" alt="footer-logo">
+                    <br>
+                    <a href="https://wa.me/6285388114785" target="_blank" class="contact-button" style="background-image: url('{{asset('images/header-footer/Whatsapp.png')}}')"></a>
+                    <a href="https://www.facebook.com/reproes/" target="_blank" class="contact-button" style="background-image: url('{{asset('images/header-footer/Facebook.png')}}')"></a>
+                    <a href="https://www.instagram.com/rebuildingproject/" target="_blank" class="contact-button" style="background-image: url('{{asset('images/header-footer/Instagram.png')}}')"></a>
+                </div>
 
-            <div class="row justify-content-center text-center" id="copyright">
-                <div class="col-lg-12 col-sm-12 justify-content-center text-center my-3">
-                    © Copyright Rebuilding Project 2020-2021. All Rights Reserved
+                <div class="col-xl-2 col-lg-2 col-sm-5 col-8 justify-content-center my-3">
+                    <a href="{{url('about-us')}}" class="pages">About Us</a>
+                    <br><br>
+                    <a href="{{url('stories')}}" class="pages">Our Story</a>
+                    <br><br>
+                    <a href="{{url('contact-us')}}" class="pages">Contact Us</a>
+                    <br><br>
+                    <a href="{{url('get-involved')}}" class="pages">Get Involved</a> <br>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-sm-7 col-11 justify-content-center my-3">
+                    <a class="contact"><i class="contact-icon fab fa-instagram footer-left"></i> @rebuildingproject</a>
+                    <br><br>
+                    <a class="contact"><i class="contact-icon fab fa-facebook-f footer-left"></i> @reproes</a>
+                    <br><br>
+                    <a class="contact">
+                        <i class="contact-icon far fa-envelope footer-left"></i> rebuildinglivesforchildren@gmail.com </a>
+                </div>
+
+                <div class="row justify-content-center text-center" id="copyright">
+                    <div class="col-lg-12 col-sm-12 justify-content-center text-center my-3">
+                        © Copyright Rebuilding Project 2020-2021. All Rights Reserved
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="{{asset('js/master.js')}}"></script>
+    <script src="{{asset('js/master.js')}}"></script>
 </body>
 
 </html>

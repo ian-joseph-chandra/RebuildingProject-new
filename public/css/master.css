@@ -8,7 +8,13 @@
     font-family: madetommy;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 /*Header*/
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -89,7 +95,9 @@
     transform-origin: right;
 }
 
+
 /*Footer*/
+
 .contact-button {
     margin-right: 5px;
     display: inline-block;
@@ -103,7 +111,7 @@
     font-family: Poppins
 }
 
-.contact-icon{
+.contact-icon {
     width: 17px;
 }
 
@@ -112,7 +120,6 @@
     text-decoration: none !important;
     color: #545454;
 }
-
 
 #footer-background {
     background-size: cover;
@@ -123,42 +130,37 @@
 
 @media (max-width: 576px) {
     .navbar ul {
-        position: fixed;
+        position: absolute;
         flex-direction: column;
         top: 57px;
         left: 0;
         width: 100%;
-        height: 40vh;
+        height: 60vh;
         background-color: #F7F7F7;
         align-items: center;
         justify-content: space-evenly;
-        transition: all 0.5s;
-        opacity: 0;
+        transition: ease-out 0.5s;
+        opacity: 1;
         z-index: -1;
+        transform: translateY(-140%);
     }
-
     .navbar {
         font-family: madetommy;
     }
-
     nav ul.slide {
         transform: translateY(0);
         opacity: 1;
     }
-
     #headerLogo {
         width: 100px;
     }
-
     .navbar {
         justify-content: flex-start;
         padding: 7px 30px;
     }
-
     .navbar-nav {
         margin-left: 90px;
     }
-
     .menu-toggle {
         display: flex;
     }
