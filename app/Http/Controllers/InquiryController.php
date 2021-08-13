@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Inquiry;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
 class InquiryController extends Controller
@@ -20,22 +23,31 @@ class InquiryController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Application|Factory|View
      */
     public function create()
     {
-        //
+        return view('contact-us');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return Application|Factory|View
      */
     public function store(Request $request)
     {
-        //
+        $inquiry = new Inquiry([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'title' => $request->input('title'),
+            'message' => $request->input('message')
+        ]);
+
+        $inquiry->save();
+        return view('contact-us');
     }
 
     /**
@@ -63,7 +75,7 @@ class InquiryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  \App\Models\Inquiry  $inquiry
      * @return \Illuminate\Http\Response
      */

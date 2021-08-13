@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InquiryController;
 use App\Http\Controllers\pages\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,7 @@ Route::get('/home', [HomeController::class, 'show'])->name('home');
 Route::get('get-involved', function(){
     return view('get-involved');
 });
+
+Route::resources([
+    'inquiries' => InquiryController::class
+]);

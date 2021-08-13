@@ -1,0 +1,49 @@
+.background {
+    background-size: contain;
+    background-position: center bottom;
+    margin-top: 120px;
+}
+
+.title {
+    color: #545454;
+    font-family: madetommy;
+    font-size: 65px;
+    Line-height: 90.22px;
+}
+
+.contact-button {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    background-size: contain
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-field, .input-field-icon {
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.input-field-icon {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.phone-icon {
+    padding: 10px;
+    min-width: 35px;
+    width: 37px;
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}

@@ -50,7 +50,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a id="contact-us" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/contact-us')}}">Contact
+                    <a id="contact-us" class="nav-link mx-lg-4 mx-xl-5 my-3" href="{{url('/inquiries/create')}}">Contact
                         Us<span class="sr-only">(current)</span></a>
                 </li>
 
@@ -83,7 +83,7 @@
                     <br><br>
                     <a href="{{url('stories')}}" class="pages">Our Story</a>
                     <br><br>
-                    <a href="{{url('contact-us')}}" class="pages">Contact Us</a>
+                    <a href="{{url('inquiries/create')}}" class="pages">Contact Us</a>
                     <br><br>
                     <a href="{{url('get-involved')}}" class="pages">Get Involved</a> <br>
                 </div>

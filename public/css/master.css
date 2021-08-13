@@ -165,3 +165,23 @@ body {
         display: flex;
     }
 }
+
+/*Contact-us page*/
+
+#login,
+#expand {
+    background-color: #FFA216;
+    border-radius: 20px;
+    border: 2px solid #FFA216 !important;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    font-family: madetommy;
+    text-decoration: none;
+}
+
+#login:hover,
+#expand:hover {
+    background-color: transparent;
+    color: #FFA216;
+}

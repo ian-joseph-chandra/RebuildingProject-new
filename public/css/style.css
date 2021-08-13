@@ -169,13 +169,6 @@ h4 {
     line-height: 45px;
 }
 
-.judulForm {
-    color: #545454;
-    font-family: madetommy;
-    font-size: 65px;
-    Line-height: 90.22px;
-}
-
 #subJudulForm {
     font-family: madetommy;
     font-size: 18px;
@@ -313,13 +306,6 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#back-story {
-    background-image: url('../assets/backgrounds/White.png');
-    background-size: contain;
-    background-position: center bottom;
-    display: flex;
 }
 
 .service-card {
@@ -461,28 +447,9 @@ h4 {
     height: 430px;
 }
 
-.icon {
-    padding: 10px;
-    min-width: 40px;
-}
-
-.input-field {
-    width: 100%;
-    padding: 10px;
-    display: inline-block;
-    box-sizing: border-box;
-    padding-left: 35px;
-}
-
-.input-icons {
-    width: 100%;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.input-icons i {
-    position: absolute;
-}
+/*.input-icons i {*/
+/*    position: absolute;*/
+/*}*/
 
 #more-top {
     background-image: url('../assets/backgrounds/Brown.png');
