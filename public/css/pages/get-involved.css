@@ -1,0 +1,45 @@
+.get-involved {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: PoppinsB;
+}
+
+#quote {
+    background-size: cover;
+    height: 385px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.donate-section {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#donate-button {
+    background-color: #FFA216;
+    border-radius: 20px;
+    border: 4px solid #FFB341 !important;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    font-family: madetommy;
+    /*text-decoration: none;*/
+    width: 285px;
+    height: 71px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#donate-button:hover {
+    background-color: transparent;
+    color: #FFA216;
+}
+

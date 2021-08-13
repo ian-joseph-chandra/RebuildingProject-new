@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [HomeController::class, 'show'])->name('home');
+
+Route::get('get-involved', function(){
+    return view('get-involved');
+});
