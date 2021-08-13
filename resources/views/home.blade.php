@@ -44,10 +44,10 @@
                         </a>
                     </div>
 
-                    <div class="programs row p-lg-3 p-sm-3 my-1">
+                    <div class="programs row p-lg-3 p-sm-3 my-3">
                         @foreach($programs as $program)
                             <div class="col-lg-3 col-sm-6">
-                                <div class="program card">
+                                <div class="program card" style="box-shadow: none">
                                     <div class="card-body text-left">
                                         <img class="mt-5" src="{{asset($program['image'])}}" alt="Avatar"
                                              width="40%"><br><br>
