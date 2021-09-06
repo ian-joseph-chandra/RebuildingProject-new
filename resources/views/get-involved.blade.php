@@ -4,9 +4,9 @@
     <link rel="stylesheet" href="{{asset('css/pages/get-involved.css')}}">
 
     <section id="01">
-        <div class="container" style="margin-top: 94px">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-sm-6 col-12 p-5" id="quote"
+                <div class="col-lg-7 col-sm-12 col-12 p-5" id="quote"
                     style="background-image: url({{asset('images/get-involved/donate.png')}})">
                     <a class="get-involved" style="color: white;">
                         <span style="color:#FFA216">"</span>Everyone can contribute<br>
@@ -14,7 +14,7 @@
                         &nbsp;&nbsp;Your support <span style="color:#FFA216">MATTERS."</span></a>
                 </div>
 
-                <div class="col-lg-5 col-sm-6 col-12 text-center donate-section"
+                <div class="col-lg-5 col-sm-12 col-12 text-center donate-section"
                      style="background-image: url({{asset('images/backgrounds/Cream.png')}});">
                         <form action="https://forms.gle/r8ddZzfxqxxh1PMW9" target="_blank">
                             <button class="btn px-5 py-2 my-1" type="submit" id="donate-button">
