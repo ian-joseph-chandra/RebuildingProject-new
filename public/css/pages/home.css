@@ -1,194 +1,233 @@
-.our-program {
-    font-size: 23px;
-    line-height: 40px;
-    margin-inline: 150px;
-    margin-bottom: 50px;
-}
-
-#section-01-subtitle {
-    color: #FFA216;
-    font-family: PoppinsEB;
-}
-
-.programs{
-    text-align: center;
-}
-
-.grid-0,
-.grid-4 {
-    font-family: madetommy;
-    font-size: 50px;
-}
-
-.grid-1,
-.grid-0 {
-    color: #545454;
-}
-
-.grid-2,
-.grid-4 {
-    color: #FFA216;
-}
-
-.grid-1,
-.grid-2 {
-    font-family: PoppinsB;
-}
-
-.program {
-    height: 100%;
-    width: 93%;
-    margin: auto;
-    background-color: white;
-    border-color: transparent !important;
-    border-radius: 30px 30px 30px 30px;
-    transition: 0.3s;
-}
-
-#section-01-btn:hover,
-#section-02-btn:hover,
-#expand:hover {
-    background-color: transparent;
-    color: #FFA216;
-}
-
-#section-01-btn,
-#section-02-btn,
-#expand {
-    background-color: #FFA216;
-    border-radius: 40px;
-    border: 2px solid #FFA216 !important;
-    cursor: pointer;
-    color: white;
-    transition: 0.5s;
-    font-size: 20px;
-    font-family: madetommy;
-    text-decoration: none;
-}
-
-#section-03-subtitle {
-    color: #545454;
-    font-family: PoppinsEB;
-}
-
-#section-04-title{
-    color: #545454;
-    font-family: PoppinsB;
-    font-size: 60px;
-}
-
-.section-04-cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-04-card {
-    background-color: #FBEFE4;
-    border-color: transparent !important;
-    border-radius: 30px 30px 30px 30px;
-    transition: 0.3s;
-    height: 380px;
-}
-
-.section-04-card-id {
-    color: #FFA216;
-    font-family: PoppinsB;
-    position: relative;
-    font-size: 50px;
-    margin-top: -50px;
-}
-
-.section-04-img {
-    max-width: 80%;
-    height: auto;
-}
-
-#section-04-card-quote {
-    line-height: 27px;
-    font-size: 13.5px;
-    font-family: Poppins;
-    white-space: pre-wrap;
-}
-
-@media (max-width: 576px) {
     .our-program {
-        font-size: 13px;
-        line-height: 20px;
-        margin-inline: 10px;
-        margin-bottom: 0px;
+        font-size: 23px;
+        line-height: 40px;
+        margin-inline: 150px;
+        margin-bottom: 50px;
     }
-
-    #quote {
-        font-size: 10px;
-        line-height: 15px;
-        display: contents;
+    
+    #section-01-subtitle {
+        color: #FFA216;
+        font-family: PoppinsEB;
     }
-
+    
+    #section-01-btn,
+    #section-01-btn-donate-now {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    
     .programs {
-        display: block;
-        text-align:start;
+        text-align: center;
     }
-
+    
+    .grid-0,
+    .grid-4 {
+        font-family: madetommy;
+        font-size: 50px;
+    }
+    
+    .grid-1,
+    .grid-0 {
+        color: #545454;
+    }
+    
+    .grid-2,
+    .grid-2-who-we-are,
+    .grid-4 {
+        color: #FFA216;
+    }
+    
+    .grid-1,
+    .grid-2,
+    .grid-2-who-we-are {
+        font-family: PoppinsB;
+    }
+    
     .program {
-        width: 200px;
-        height: 237px;
-        margin: 20px;
+        height: 100%;
+        width: 93%;
+        margin: auto;
         background-color: white;
         border-color: transparent !important;
         border-radius: 30px 30px 30px 30px;
         transition: 0.3s;
     }
-
-    .card-title {
-        font-size: 17px;
-        line-height: 4px;
-    }
-
-    #quote-1 {
-        font-size: 9.5px;
-        line-height: 15px;
-    }
-
-    .btnGetInvolved {
-        display: none;
-    }
-
+    
     .section-03 {
-        text-align: center;
+        justify-content: space-between;
     }
-
-    #section-03-quote {
-        font-size: 12px;
-        line-height: 22px;
-        text-align: start;
-        display: block;
+    
+    #section-01-btn:hover,
+    #section-01-btn-donate-now,
+    #section-02-btn:hover,
+    #expand:hover {
+        background-color: transparent;
+        color: #FFA216;
     }
-
-    #section-03-subtitle,
-    #section-01-subtitle {
-        font-size: 12px;
+    
+    #section-01-btn,
+    #section-01-btn-donate-now,
+    #section-02-btn,
+    #expand {
+        background-color: #FFA216;
+        border-radius: 40px;
+        border: 2px solid #FFA216 !important;
+        cursor: pointer;
+        color: white;
+        transition: 0.5s;
+        font-size: 20px;
+        font-family: madetommy;
+        text-decoration: none;
     }
-
-    .pKarakter {
-        display: block;
-        margin-top: 14px;
+    
+    #section-03-subtitle {
+        color: #545454;
+        font-family: PoppinsEB;
     }
-
+    
+    #section-04-title {
+        color: #545454;
+        font-family: PoppinsB;
+        font-size: 60px;
+    }
+    
+    .section-04-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
     .section-04-card {
-        width: 210px;
-        height: 260px;
-        margin: 10px;
-        margin-bottom: 80px;
+        background-color: #FBEFE4;
+        border-color: transparent !important;
+        border-radius: 30px 30px 30px 30px;
+        transition: 0.3s;
+        height: 380px;
     }
-
+    
     .section-04-card-id {
-        font-size: 45px;
-        margin-top: -45px;
+        color: #FFA216;
+        font-family: PoppinsB;
+        position: relative;
+        font-size: 50px;
+        margin-top: -50px;
     }
-
+    
+    .section-04-img {
+        max-width: 80%;
+        height: auto;
+    }
+    
     #section-04-card-quote {
-        font-size: 11px;
-        line-height: 17px;
+        line-height: 27px;
+        font-size: 13.5px;
+        font-family: Poppins;
+        white-space: pre-wrap;
     }
-}
+    
+    @media (max-width: 576px) {
+        .our-program {
+            font-size: 13px;
+            line-height: 20px;
+            margin-inline: 10px;
+            margin-bottom: 0px;
+        }
+        #quote {
+            font-size: 10px;
+            line-height: 15px;
+            display: contents;
+        }
+        .programs {
+            display: block;
+            text-align: start;
+        }
+        .program {
+            width: 200px;
+            height: 237px;
+            margin: 20px;
+            background-color: white;
+            border-color: transparent !important;
+            border-radius: 30px 30px 30px 30px;
+            transition: 0.3s;
+        }
+        .card-title {
+            font-size: 17px;
+            margin-bottom: 3px;
+            line-height: 20px;
+        }
+        #quote-1 {
+            font-size: 9.5px;
+            line-height: 14px;
+        }
+        .btnGetInvolved {
+            display: none;
+        }
+        .section-03 {
+            text-align: center;
+        }
+        #section-03-quote {
+            font-size: 12px;
+            line-height: 22px;
+            text-align: start;
+            display: block;
+        }
+        #section-03-subtitle,
+        #section-01-subtitle {
+            font-size: 12px;
+        }
+        .pKarakter {
+            display: block;
+            margin-top: 14px;
+        }
+        .section-04-card {
+            width: 210px;
+            height: 260px;
+            margin: 10px;
+            margin-bottom: 80px;
+        }
+        .section-04-card-id {
+            font-size: 45px;
+            margin-top: -45px;
+        }
+        #section-04-card-quote {
+            font-size: 11px;
+            line-height: 17px;
+        }
+        .grid-0,
+        .grid-4 {
+            font-size: 35px;
+        }
+        #section-01-btn-donate-now {
+            font-size: 10px;
+            width: 90px;
+            height: 24px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        #section-01-btn-get-involved {
+            display: none !important;
+        }
+        .section-03 {
+            justify-content: space-evenly;
+        }
+        #section-04-title {
+            font-size: 38px;
+        }
+        .grid-2-who-we-are {
+            font-size: 35px;
+            line-height: 55px;
+        }
+        #sec-01,
+        #sec-02,
+        #sec-03,
+        #sec-04 {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }

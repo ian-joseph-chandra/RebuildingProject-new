@@ -3,7 +3,7 @@
 @section('content')
     <link rel="stylesheet" href="{{asset('css/pages/home.css')}}">
 
-    <section id="01">
+    <section id="sec-01">
         <div class="container" style="margin-top: 170px">
             <div class="row justify-content-between">
                 <div class="col-lg-5 col-8">
@@ -17,7 +17,7 @@
                     <h1 class="grid-0">through</h1>
                     <h1 class="grid-4">Education</h1>
 
-                    <button class="btn px-5 py-2 my-1" type="submit" id="section-01-btn"
+                    <button class="btn" type="submit" id="section-01-btn-donate-now"
                             onclick="window.location='{{url('/get-involved')}}'"><b>Donate Now</b>
                     </button>
                 </div>
@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section id="02">
+    <section id="sec-02">
         <div class="container">
             <div class="col-lg-12 col-sm-10 col-12 mt-5 text-center">
                 <div class="row px-2" id="back-welcome">
@@ -59,7 +59,7 @@
                         @endforeach
                     </div>
 
-                    <button class="btn px-5 py-2 mb-4" type="submit" id="section-01-btn"
+                    <button class="btn px-5 py-2 mb-4" type="submit" id="section-01-btn-get-involved"
                             onclick="window.location='{{url('get-involved')}}'"><b>Get Involved</b>
                     </button>
                 </div>
@@ -67,9 +67,9 @@
         </div>
     </section>
 
-    <section id="03">
+    <section id="sec-03">
         <div class="container my-5">
-            <div class="row justify-content-between">
+            <div class="row section-03">
                 <div class="col-lg-5 col-10 text-center">
                     <img class="img-fluid" src="{{asset('images/home/who.png')}}">
                 </div>
@@ -77,7 +77,7 @@
                 <div class="section-03 col-lg-6 col-10 mt-3 text center">
                     <a id="section-03-subtitle">03 - SIAPAKAH KAMI</a><br>
 
-                    <h1 class="grid-2">Who We Are</h1>
+                    <h1 class="grid-2-who-we-are">Who We Are</h1>
 
                     <a id="section-03-quote">
                         <b>Rebuilding Project merupakan gerakan sosial dibidang edukasi yang bekerja sama dengan panti
@@ -91,7 +91,7 @@
         </div>
     </section>
 
-    <section id="04">
+    <section id="sec-04">
         <div class="container my-5 text-center">
             <div class="row p-3 justify-content-center">
                 <div class="col-lg-12 text-center">
@@ -105,7 +105,7 @@
             <div class="section-04-cards row my-2">
                 <div class="row p-sm-3 my-2">
                     @foreach($activities as $activity)
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-3 col-md-6" style="justify-content: center;display: flex;">
                             <div class="section-04-card card">
                                 <div class="card-body">
                                     <h2 class="section-04-card-id text-center">{{$activity['id']}}</h2>
